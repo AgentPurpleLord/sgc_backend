@@ -169,9 +169,11 @@ WAGTAIL_SITE_NAME = "sgc"
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://startgamecrusaders.com'
 
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
 CORS_URLS_REGEX = r'^/api/v2/'
 CORS_ORIGIN_WHITELIST = [
+    "null",
     "http://localhost:8080",
     "http://127.0.0.1:8000",
     "https://127.0.0.1:8000",
