@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags wagtailimages_tags %}
+{% block content %}
+<section class="splash container-lg">
+  <div class="splash__outline row">
+    <div class="splash__column col col--6">
+      <h1>{{ self.hero_title }}</h1>
+      <p>{{ self.hero_subtitle }}</p>
+      <button>CRUSADE</button>
+    </div>
+    <div class="splash__column col col--6">
+      <img src="{% static 'svg/GamingController.svg' %}"
+    </div>
+  </div>
+</section>
+{% endblock %}
