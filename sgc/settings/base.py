@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'home',
     'search',
     'news',
+    'menus',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -166,7 +167,7 @@ WAGTAIL_SITE_NAME = "sgc"
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
-BASE_URL = 'http://startgamecrusaders.com'
+BASE_URL = 'https://startgamecrusaders.com'
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
